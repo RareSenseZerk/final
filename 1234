@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="578" height="2000"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 3;
+      var centerY = canvas.height / 15.72;
+      var radius = 70;
+
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'white';
+      context.fill();
+      context.lineWidth = 8;
+      context.strokeStyle = '#003300';
+      context.stroke();
+    </script>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(90, 275);
+      context.lineTo(190, 200);
+      context.lineWidth = 15;
+      context.stroke();
+    </script>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(190, 200);
+      context.lineTo(190, 350);
+      context.lineWidth = 15;
+      context.stroke();
+    </script>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(290, 275);
+      context.lineTo(190, 200);
+      context.lineWidth = 15;
+      context.stroke();
+    </script>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(290, 450);
+      context.lineTo(190, 350);
+      context.lineWidth = 15;
+      context.stroke();
+    </script>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(90, 450);
+      context.lineTo(190, 350);
+      context.lineWidth = 15;
+      context.stroke();
+    </script>
+  </body>
+</html>   
